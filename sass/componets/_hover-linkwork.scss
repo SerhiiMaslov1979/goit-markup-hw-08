@@ -1,0 +1,54 @@
+.linkwork-product:hover .linkwork-overlay,
+.linkwork-product:focus .linkwork-overlay {
+  opacity: 1;
+}
+
+.linkwork-product:focus .linkwork-overlay {
+  opacity: 1;
+}
+
+.linkwork-thumb:hover::before {
+  opacity: 1;
+}
+
+.linkwork-thumb {
+  position: relative;
+  width: 370px;
+  overflow: hidden;
+}
+.linkwork-product-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color-overley);
+  transform: translatey(100%);
+  transition: transform var(--time-function) var(--transition-function);
+}
+.linkwork-product:hover .linkwork-product-overlay,
+.linkwork-product:focus .linkwork-product-overlay {
+  transform: translateY(0);
+}
+.linkwork-product:focus .linkwork-product-overlay {
+  transform: translateY(0);
+}
+
+.linkwork-overlay {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 63px 24px;
+  opacity: 0;
+}
+.linkwork-text-overlay {
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--body-background-color);
+}

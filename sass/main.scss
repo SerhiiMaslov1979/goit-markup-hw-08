@@ -1,0 +1,41 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./componets/container";
+@import "./base/common.scss";
+@import "./utils/hidden";
+
+@import "./layouts/header-logo";
+@import "./layouts/header-contacts";
+@import "./layouts/header-line";
+@import "./layouts/header";
+@import "./componets/hero";
+@import "./componets/hero-title";
+@import "./componets/hero-btn";
+@import "./componets/feature";
+@import "./componets/activities";
+@import "./componets/workers";
+@import "./componets/client";
+
+@import "./componets/work";
+@import "./componets/worklink-btn";
+@import "./componets/hover-linkwork";
+@import "./componets/linkwork-title";
+@import "./componets/workers-title";
+@import "./componets/worker-social-list";
+@import "./componets/worker-title";
+@import "./componets/worker2-title";
+
+@import "./componets/modalwindow";
+@import "./componets/checkbox";
+@import "./componets/modal-btn";
+@import "./componets/modal-close-btn";
+@import "./componets/modal-title";
+@import "./componets/form-modal-window";
+
+@import "./layouts/footer";
+@import "./layouts/footer-logo";
+@import "./layouts/social-footer";
+@import "./layouts/footer-form";
+@import "./layouts/footer-btn";
+@import "./layouts/footer-form-title";
+@import "./layouts/footer-contacts";
