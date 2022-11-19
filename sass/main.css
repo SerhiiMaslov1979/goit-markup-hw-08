@@ -57,7 +57,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 .section {
@@ -65,24 +64,11 @@ img {
 }
 
 .container {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
 }
 
 body {
@@ -329,17 +315,7 @@ body {
 
 .feature__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
-}
-
-.feature__item {
-  width: calc((100% - 120px) / 4);
-}
-@media screen and (min-width: 768px) {
-  .feature__item {
-    width: calc((100% - 60px) / 2);
-  }
 }
 
 .feature__group {
