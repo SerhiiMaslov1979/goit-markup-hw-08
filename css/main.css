@@ -57,10 +57,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
-.section {
-  padding: 94px 0;
+  max-width: 100%;
 }
 
 .container {
@@ -69,6 +66,21 @@ img {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 786px) {
+  .container {
+    max-width: 786px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 body {
@@ -95,6 +107,10 @@ body {
 
 .linkwork-link {
   text-decoration: none;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -315,17 +331,54 @@ body {
 
 .feature__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
+.feature__item {
+  width: 100%;
+}
+@media screen and (min-width: 786px) {
+  .feature__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__item {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
 .feature__group {
-  width: 270px;
   height: 120px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--section31-background-color);
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .feature__group {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 786px) {
+  .feature__group {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__group {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+  }
 }
 
 .feature__title {
@@ -337,6 +390,21 @@ body {
   color: var(--title-text-color);
   margin-bottom: 10px;
   margin-top: 30px;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .feature__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 786px) {
+  .feature__title {
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature__title {
+    text-align: start;
+  }
 }
 
 .feature__text {
