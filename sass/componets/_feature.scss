@@ -8,7 +8,7 @@
 }
 .feature__item {
   width: 100%;
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
@@ -32,13 +32,15 @@
     width: 100%;
     text-align: center;
   }
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
@@ -59,10 +61,12 @@
   @media screen and (min-width: 480px), (max-width: 480px) {
     text-align: center;
   }
-  @media screen and (min-width: 786px) {
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
     text-align: start;
   }
   @media screen and (min-width: 1200px) {
+    max-width: 1200px;
     text-align: start;
   }
 }
@@ -70,4 +74,16 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    text-align: start;
+  }
 }
