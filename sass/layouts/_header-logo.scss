@@ -8,6 +8,9 @@
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 93px;
+  @media screen and (min-width: 768px), (max-width: 768px) {
+    margin-right: 88px;
+  }
 }
 .logo-black {
   color: var(--logo2-color);

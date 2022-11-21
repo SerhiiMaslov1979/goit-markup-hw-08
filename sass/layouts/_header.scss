@@ -8,10 +8,14 @@
   align-items: center;
 }
 
-.header__nav-item,
-.header__contacts-item:not(:last-child) {
+.header__nav-item:not(:last-child) {
   margin-right: 50px;
 }
-// .header-item:not(:last-child) {
-//   margin-right: 50px;
-// }
+
+.header__contacts-item:first-child {
+  margin-right: 50px;
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 0;
+  }
+}
