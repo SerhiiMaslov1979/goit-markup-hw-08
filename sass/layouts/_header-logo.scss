@@ -8,7 +8,7 @@
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 93px;
-  @media screen and (min-width: 768px), (max-width: 768px) {
+  @media screen and (min-width: 768px), (max-width: 1199px) {
     margin-right: 88px;
   }
 }

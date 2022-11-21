@@ -1,6 +1,19 @@
 .footer-form {
   display: block;
   margin-left: 93px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    // margin-left: 165px;
+    margin-left: 0;
+  }
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    display: block;
+  }
 }
 .footer-modal-form {
   display: flex;
@@ -27,4 +40,17 @@
 }
 .footer-modal-input:focus {
   border-color: var(--accent-color);
+}
+.footer-form-title {
+  text-align: left;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--body-background-color);
+  margin-bottom: 20px;
 }
