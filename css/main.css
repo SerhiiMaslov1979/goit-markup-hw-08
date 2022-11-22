@@ -221,7 +221,7 @@ body {
     font-size: 12px;
     line-height: 1.17;
     margin-bottom: 10px;
-    padding-top: 21px;
+    padding-top: 0;
     padding-bottom: 0px;
   }
 }
@@ -261,7 +261,7 @@ body {
     font-size: 12px;
     line-height: 1.17;
     padding-top: 0px;
-    padding-bottom: 21px;
+    padding-bottom: 0;
   }
 }
 
@@ -1170,24 +1170,30 @@ body {
 
 .footer-contact {
   display: flex;
-  flex-wrap: nowrap;
   align-items: baseline;
+  gap: 93px;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .footer-contact {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-contact {
-    max-width: 768px;
     display: flex;
-    flex-wrap: wrap;
     gap: 60px;
-    align-items: baseline;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: baseline;
+    -webkit-box-align: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-contact {
-    max-width: 1200px;
     display: flex;
-    gap: 60px;
+    gap: 93px;
+    align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 
@@ -1227,15 +1233,24 @@ body {
 }
 
 .social-footer {
-  display: inline-block;
-  margin-left: 93px;
+  display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px), (max-width: 480px) {
   .social-footer {
-    max-width: 480px;
-    margin-left: 0;
+    display: block;
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-footer {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    text-align: left;
   }
 }
 
@@ -1243,6 +1258,23 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .social-footer-list {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-footer-list {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-footer-list {
+    text-align: left;
+  }
 }
 
 .footer-social-item {
@@ -1273,27 +1305,46 @@ body {
 
 .footer-form {
   display: block;
-  margin-left: 93px;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-form {
-    max-width: 768px;
     text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 0;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .footer-form {
-    max-width: 480px;
-    display: block;
+    text-align: left;
   }
 }
 
 .footer-modal-form {
   display: flex;
-  position: relative;
+  align-items: center;
+  text-align: left;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .footer-modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-modal-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-modal-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-input-icon {
@@ -1315,13 +1366,30 @@ body {
   outline: transparent;
   color: var(--accent2-color);
 }
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .footer-modal-input {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-modal-input {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-modal-input {
+    width: 358px;
+  }
+}
 
 .footer-modal-input:focus {
   border-color: var(--accent-color);
 }
 
 .footer-form-title {
-  text-align: left;
+  display: block;
   font-family: inherit;
   font-style: normal;
   font-weight: 700;
@@ -1334,6 +1402,7 @@ body {
 }
 
 .footer-email-btn {
+  position: relative;
   width: 200px;
   height: 50px;
   font-family: inherit;
@@ -1358,17 +1427,25 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width: 768px) {
-  .contact-footer {
-    max-width: 768px;
-  }
+.contact-footer {
+  display: block;
+  text-align: left;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px), (max-width: 480px) {
   .contact-footer {
-    display: block;
-    max-width: 480px;
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-footer {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-footer {
+    text-align: left;
   }
 }
 
