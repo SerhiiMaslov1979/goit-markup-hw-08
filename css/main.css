@@ -1441,7 +1441,7 @@ body {
 }
 @media screen and (min-width: 480px), (max-width: 480px) {
   .footer-modal-input {
-    width: 450px;
+    max-width: 450px;
     margin-bottom: 20px;
   }
 }
