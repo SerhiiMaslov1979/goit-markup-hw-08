@@ -10,32 +10,15 @@
   @media screen and (min-width: 1200px) {
     text-align: left;
   }
-  // margin-left: 93px;
-
-  // @media screen and (min-width: 480px), (max-width: 480px) {
-  //   display: block;
-  //   text-align: center;
-  // }
-  // @media screen and (min-width: 768px), (max-width: 1199px) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   text-align: center;
-  //   align-items: center;
-  //   margin-left: 0;
-  // }
-  // @media screen and (min-width: 1200px), (max-width: 1600px) {
-  //   display: inline-block;
-  //   text-align: left;
-  // }
 }
-// .footer-form input::placeholder {
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   letter-spacing: 0.03em;
+.footer-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
 
-//   color: rgba(255, 255, 255, 0.6);
-// }
+  color: var(--footercontact-color);
+}
 .footer-modal-form {
   display: flex;
   align-items: center;
@@ -53,19 +36,6 @@
     flex-direction: row;
     align-items: baseline;
   }
-  // @media screen and (min-width: 480px), (max-width: 480px) {
-  //   display: block;
-  //   text-align: center;
-  // }
-  // @media screen and (min-width: 768px), (max-width: 1199px) {
-  //   display: flex;
-
-  //   align-items: center;
-  // }
-  // @media screen and (min-width: 1200px), (max-width: 1600px) {
-  //   display: flex;
-  //   text-align: left;
-  // }
 }
 .footer-input-icon {
   position: absolute;
@@ -98,17 +68,6 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
-
-  // @media screen and (min-width: 480px), (max-width: 480px) {
-  //   margin-bottom: 20px;
-  // }
-
-  // @media screen and (min-width: 768px), (max-width: 1199px) {
-  //   margin-bottom: 20px;
-  //   // width: 450px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  // }
 }
 .footer-modal-input:focus {
   border-color: var(--accent-color);

@@ -26,6 +26,14 @@
   border-radius: 4px;
   padding: 40px;
   background-color: var(--background-modal);
+
+  @media screen and (max-width: 1199px) {
+    height: 95%;
+    width: 95%;
+    max-height: 609px;
+    max-width: 450px;
+    overflow: scroll;
+  }
 }
 
 .modal:hover,

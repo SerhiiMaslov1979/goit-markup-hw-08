@@ -111,6 +111,21 @@ body {
 .section {
   padding: 94px 0;
 }
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -453,6 +468,21 @@ body {
 
 .feature {
   padding-bottom: 0;
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .feature {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature {
+    padding-bottom: 0;
+  }
 }
 
 .feature__list {
@@ -942,6 +972,15 @@ body {
   padding: 40px;
   background-color: var(--background-modal);
 }
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 95%;
+    width: 95%;
+    max-height: 609px;
+    max-width: 450px;
+    overflow: scroll;
+  }
+}
 
 .modal:hover,
 .modal:focus {
@@ -972,6 +1011,11 @@ body {
   letter-spacing: 0.03em;
   white-space: pre;
 }
+@media screen and (max-width: 1199px) {
+  .modal__checkbox-text {
+    font-size: 12px;
+  }
+}
 
 .modal__checkbox-text-activ {
   font-family: inherit;
@@ -982,6 +1026,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
+}
+@media screen and (max-width: 1199px) {
+  .modal__checkbox-text-activ {
+    font-size: 12px;
+  }
 }
 
 .modal__checkbox-input {
@@ -1322,6 +1371,30 @@ body {
   }
 }
 
+.footer-form input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footercontact-color);
+}
+
+.footer-form input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footercontact-color);
+}
+
+.footer-form input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--footercontact-color);
+}
+
 .footer-modal-form {
   display: flex;
   align-items: center;
@@ -1418,6 +1491,21 @@ body {
   padding: 10px 62px 10px 28px;
   margin-left: 12px;
   transition: background-color var(--time-function) var(--transition-function), color var(--time-function) var(--transition-function);
+}
+@media screen and (min-width: 480px), (max-width: 480px) {
+  .footer-email-btn {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-email-btn {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-email-btn {
+    margin-left: 12px;
+  }
 }
 
 .footer-email-btn:hover,

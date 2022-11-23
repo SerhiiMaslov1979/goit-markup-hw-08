@@ -17,6 +17,16 @@
 
   transition: background-color var(--time-function) var(--transition-function),
     color var(--time-function) var(--transition-function);
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer-email-btn:hover,
 .footer-email-btn:focus {
