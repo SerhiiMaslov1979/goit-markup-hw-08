@@ -15,31 +15,31 @@
   background-position: center;
   background-size: cover;
 
-  // @media screen and (min-width: 480px), (max-width: 480) {
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba(47, 48, 58, 0.4),
-  //       rgba(47, 48, 58, 0.4)
-  //     ),
-  //     url("../images/480-Header-img.jpg");
-  // }
-  // @media screen and (min-width: 768px) {
-  //   max-width: 1190px;
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba(47, 48, 58, 0.4),
-  //       rgba(47, 48, 58, 0.4)
-  //     ),
-  //     url("../images/768-Header-img.jpg");
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba(47, 48, 58, 0.4),
-  //       rgba(47, 48, 58, 0.4)
-  //     ),
-  //     url("../images/1mgoverlay.jpg");
-  // }
+  @media screen and (min-width: 480px), (max-width: 480) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/480-Header-img.jpg");
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1190px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/768-Header-img.jpg");
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/1mgoverlay.jpg");
+  }
 }
 // @include mobile {
 //   max-width: 480px;
