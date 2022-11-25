@@ -18,6 +18,9 @@
   white-space: pre;
   @media screen and (max-width: 1199px) {
     font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
+    white-space: pre;
   }
 }
 .modal__checkbox-text-activ {
@@ -31,6 +34,8 @@
   text-decoration: underline;
   @media screen and (max-width: 1199px) {
     font-size: 12px;
+    line-height: 1.17;
+    font-weight: 400;
   }
 }
 

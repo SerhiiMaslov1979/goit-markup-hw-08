@@ -37,3 +37,12 @@
   letter-spacing: 0.03em;
   margin-bottom: 16px;
 }
+
+.worker-foto {
+  @media screen and (max-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+}
