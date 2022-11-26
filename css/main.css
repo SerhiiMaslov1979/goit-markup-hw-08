@@ -535,52 +535,42 @@ body {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 480px) {
-  .hero {
-    max-width: 768px;
-    background: var(--hero-background);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/480-header-img.jpg");
-    width: 100%;
-    height: 100%;
-    padding: 118px 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 1199px;
-    background: var(--hero-background);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/768-header-img.jpg");
-    width: 100%;
-    height: 100%;
-    padding: 118px 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero {
-    max-width: 1600px;
-    background: var(--hero-background);
-    padding: 200px 0;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/1mgoverlay.jpg");
-    width: 100%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/2x/2x-1600-header-img.jpg");
   }
 }
 
+@media screen and (min-width: 0px), (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/480-header-img.jpg");
+  }
+}
+@media screen and (min-width: 0px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 0px) and (min-resolution: 2dppx), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/2x/header-2x-450-img.jpg");
+  }
+}
+@media screen and (min-width: 768px), (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/768-header-img.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx), (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/2x/2x-768-header-img.jpg");
+  }
+}
+@media screen and (min-width: 1200px), (max-width: 1600px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/1mgoverlay.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx), (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1600px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/2x/2x-1600-header-img.jpg");
+  }
+}
 .hero__container {
   text-align: center;
 }
@@ -994,16 +984,8 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.linkwork-product:hover .linkwork-overlay,
-.linkwork-product:focus .linkwork-overlay {
-  opacity: 1;
-}
-
-.linkwork-product:focus .linkwork-overlay {
-  opacity: 1;
-}
-
-.linkwork-thumb:hover::before {
+.linkwork-link:hover .linkwork-overlay,
+.linkwork-link:focus .linkwork-overlay {
   opacity: 1;
 }
 
@@ -1025,8 +1007,8 @@ body {
   transition: transform var(--time-function) var(--transition-function);
 }
 
-.linkwork-product:hover .linkwork-product-overlay,
-.linkwork-product:focus .linkwork-product-overlay {
+.linkwork-link:hover .linkwork-product-overlay,
+.linkwork-link:focus .linkwork-product-overlay {
   transform: translateY(0);
 }
 
@@ -1218,6 +1200,12 @@ body {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 479px) {
+  .modal__checkbox-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .modal__checkbox-text {
   font-family: inherit;
@@ -1228,11 +1216,23 @@ body {
   letter-spacing: 0.03em;
   white-space: pre;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px), (max-width: 1199px) {
   .modal__checkbox-text {
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
+    white-space: pre;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal__checkbox-text {
+    font-style: normal;
     font-weight: 400;
+    font-size: 10px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     white-space: pre;
   }
 }
@@ -1247,11 +1247,22 @@ body {
   color: var(--accent-color);
   text-decoration: underline;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px), (max-width: 1199px) {
   .modal__checkbox-text-activ {
+    font-style: normal;
+    font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal__checkbox-text-activ {
+    font-style: normal;
     font-weight: 400;
+    font-size: 10px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -1516,12 +1527,14 @@ body {
 @media screen and (min-width: 768px) {
   .social-footer {
     margin-left: 0;
+    margin-bottom: 0;
     text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .social-footer {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1675,6 +1688,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-modal-input {
+    margin-bottom: 0;
     width: 358px;
   }
 }
