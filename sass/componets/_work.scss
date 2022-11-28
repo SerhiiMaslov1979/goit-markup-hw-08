@@ -6,8 +6,16 @@
 }
 .linkwork-item {
   flex-basis: calc((100% - 2 * 30px) / 3);
-}
 
+}
+// @media screen and (min-width: 768px) {.linkwork-item {
+//   flex-basis: calc((100% - 30px) / 2);
+// }
+// }
+// @media screen and (min-width: 1200px) { .linkwork-item {
+//   flex-basis: calc((100% - 2 * 30px) / 3);
+// }
+// }
 .linkwork-link {
   display: block;
   transition: box-shadow var(--time-function) var(--transition-function);
