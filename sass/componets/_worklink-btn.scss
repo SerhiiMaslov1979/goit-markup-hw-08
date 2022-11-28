@@ -1,6 +1,20 @@
 .worklink-list {
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .worklink-item:not(:last-child) {
   margin-right: 8px;

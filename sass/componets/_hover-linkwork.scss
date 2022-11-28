@@ -19,6 +19,21 @@
   position: relative;
   width: 370px;
   overflow: hidden;
+  @media screen and (min-width: 480px), (max-width: 480px) {
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
+    width: 354px;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1200px) {
+    position: relative;
+    width: 370px;
+    overflow: hidden;
+  }
 }
 .linkwork-product-overlay {
   display: block;
