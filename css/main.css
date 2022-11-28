@@ -1009,7 +1009,7 @@ body {
   }
 }
 .linkwork-link {
-  display: block;
+  display: flex;
   height: 100%;
   transition: box-shadow var(--time-function) var(--transition-function);
 }
@@ -1038,6 +1038,7 @@ body {
   .linkwork-product {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
   }
 }

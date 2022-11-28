@@ -38,7 +38,7 @@
   }
 }
 .linkwork-link {
-  display: block;
+  display: flex;
   height: 100%;
   transition: box-shadow var(--time-function) var(--transition-function);
 }
@@ -67,7 +67,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: center;
     height: 100%;
   }
   @media screen and (min-width: 1200px) {
